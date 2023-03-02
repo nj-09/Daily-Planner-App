@@ -1,4 +1,5 @@
 // Global variables
+
 $(document).ready(function () {
     $(".saveBtn").on("click", function () {
         var x = $(this).siblings(".description").val();
@@ -20,8 +21,12 @@ $(document).ready(function () {
     $("#txt8").val(localStorage.getItem("hour-16"))
     $("#txt9").val(localStorage.getItem("hour-17"))
 
-    // FInd out from googling how to grab current time from momentjs
+    // Grab current time from momentjs
+    $('#currentDay').text(moment().format('dddd [the] Do [of] MMMM'));
 
+    // Color Coding for past, present and future slots according to the user's time
+
+    
 })
 
 //the split method also convert it to an interger
