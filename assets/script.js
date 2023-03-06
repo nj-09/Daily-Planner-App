@@ -24,9 +24,38 @@ $(document).ready(function () {
     // Grab current time from momentjs
     $('#currentDay').text(moment().format('dddd [the] Do [of] MMMM'));
 
-    // Color Coding for past, present and future slots according to the user's time
-
-    
 })
 
+
+    // Color Coding for past, present and future slots according to the user's time
+    
+function getHour() {
+    var currentTime = moment().hours();
+            // Looping through an array
+            const data = [
+                { name: 'John', age: 30, group: 'A' },
+                { name: 'Mary', age: 25, group: 'B' },
+                { name: 'Mike', age: 20, group: 'A' },
+                { name: 'Jane', age: 15, group: 'C' },
+                { name: 'Peter', age: 25, group: 'B' }
+              ];
+              
+              // forEach loop
+              data.forEach(function(item, index) {
+                console.log(item, index);
+});
+
+              // If/else if statements to check if passed the current time
+              $('.time-block').each(function() {
+                var block = parseInt
+
+
+}
+
+
+
+
+
+
 //the split method also convert it to an interger
+// I think I'll need to call an element from the index.html like say for hour 9
