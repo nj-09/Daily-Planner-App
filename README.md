@@ -2,7 +2,7 @@
 
 ## Challenge Information
 
-I had to make a simple calendar application that allows a user to save events for each hour of the day. The app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
+I made a simple calendar application that allows a user to save events for each hour of the day. The app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
 
 I used [Moment.js](https://momentjs.com/) library to work with date and time.
 
