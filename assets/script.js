@@ -32,18 +32,17 @@ function getHour() {
     var currentTime = moment().hours();
             // Looping through an array
             $('.time-block').each(function() {
-                var blockTime = parseInt($(this).attr('#9').split('hour-')[1]);
+                var blockTime = parseInt($(this).attr('id').split('hour-')[1]);
                 console.log(blockTime, currentTime)
-                
                 if (blockTime < currentTime) {
                     $(this).addClass('past');
                     
-                }  else if (blockTime < currentTime) {
-                    $(this).addClass('past');
+                }  else if (blockTime == currentTime) {
+                    $(this).addClass('present');
 
-                }   else (blockTime < currentTime) 
-                    $(this).addClass('past');
-
+                } else {
+                    $(this).addClass('future');
+                }
 });
 
 }
